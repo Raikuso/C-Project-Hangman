@@ -231,10 +231,6 @@ void playGame(const char* word, int wordLength) {
 
 int main() {
     SetConsoleTitle(TEXT("Hangman"));
-    COORD c;
-    c.X = 120; // 120 Zeichen/Zeile
-    c.Y = 1000; // 1000 Zeilen
-    SetConsoleScreenBufferSize(GetStdHandle(STD_OUTPUT_HANDLE), c);
 
 
     srand(static_cast<unsigned int>(time(0)));
